@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+  <body>
+  <div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="Web.html">Web Development</a>
+  <a class="active" href="Data.html">Data Management</a>
+  <a href="Security.html">Security team</a>
+  <a href="Resume.html">Resume</a>
+  <a href="https://forms.gle/WaJEZHPwWCbpPxMT6">Contact</a>
+  </div>
+  <div class="w3-content w3-display-container" style="max-width:700px">
+    <font size="10">Data Management</font>
+    <p><font size="4">So, when I was in the Data Management team for Maxx Potential I learned a lot about analytics and overall how to look at how many people are viewing the website and also where there viewing the website from and also overall seeing your demographic. Further more, I had to make a powerpoint and some documents as my final project and the link for the powerpoint is right here >>> <a href="https://docs.google.com/presentation/d/1PNXPg4j6R_Xo8-Z9Yu5Y61GS9MuLUr3MgD-IAcirTUs/edit?usp=sharing">LINK</a></font></p></div>
+   </div>
+   <br>
+   <br>
+<div class="w3-content w3-display-container" style="max-width:700px">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="Data1.png" style="width:100%">
+  <div class="text" style="text-align:left">Summary of the Analytics Tool</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="Data2.png" style="width:100%">
+  <div class="text" style="text-align:left">Executive Summary 1</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="Data3.png" style="width:100%">
+  <div class="text" style="text-align:left">Executive Summary 2</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+ </div>
+ <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+  </div>
+  </body>
+  </html>
