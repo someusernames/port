@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+  <body>
+  <div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="Web.html">Web Development</a>
+  <a href="Data.html">Data Management</a>
+  <a class="active" href="Security.html">Security team</a>
+  <a href="Resume.html">Resume</a>
+  <a href="https://forms.gle/WaJEZHPwWCbpPxMT6">Contact</a>
+  </div>
+  <div class="w3-content w3-display-container" style="max-width:700px">
+    <font size="10">Security Team</font>
+    <p><font size="4">The security team with out a doubt is one of the most important group out of them all. Being in the security team I have learned so much about the importance of keeping personal files and passwords safe and encrypted so that no one can get there hands on that information. So, having a proper system that keeps your company's information safe is extremly important for your company. So, from the research we gathered we came to the conclusion that we would use dashlane as our password management system and I have documents and a powerpoint that will be linked right here >>> <a href="https://docs.google.com/presentation/d/1uLYCicKqsyJ_0tkQsIjt35rRqyPzSegs8osQHFnHlw8/edit?usp=sharing">LINK</a></font></p></div>
+   </div>
+   <br>
+   <br>
+<div class="w3-content w3-display-container" style="max-width:700px">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="Security1.png" style="width:100%">
+  <div class="text" style="text-align:left">Security 1</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="Security2.png" style="width:100%">
+  <div class="text" style="text-align:left">Security 2</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="Security3.png" style="width:100%">
+  <div class="text" style="text-align:left">Security 3</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="Security4.png" style="width:100%">
+  <div class="text" style="text-align:left">Security 4</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+ </div>
+ <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+  </div>
+  </body>
+  </html>
+
+  </div>
+  </body>
+  </html>
