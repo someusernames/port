@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+   <div class="topnav">
+    <a href="index.html">Home</a>
+    <a class="active" href="Web.html">Web Development</a>
+    <a href="Data.html">Data Management</a>
+    <a href="Security.html">Security team</a>
+    <a href="Resume.html">Resume</a>
+    <a href="https://forms.gle/WaJEZHPwWCbpPxMT6">Contact</a>
+   </div>
+   <div class="w3-content w3-display-container" style="max-width:700px">
+    <font size="10">Web Development</font>
+    <p><font size="4">When I was in my internship with MaxxPotential I worked for a fake power company and the power company had a bad website that we had to fix and give it a better look overall. It was a great experience and I learned so much html and css just from searching and figuring out my problems with trial and error. Furthermore, I have before and after photos below of the great changes we gave to the website, including the contact page we added for easy access to contact info.</font></p></div>
+   </div>
+   <br>
+   <br>
+   <div class="w3-content w3-display-container" style="max-width:700px">
+   <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="Home.png" style="width:100%">
+  <div class="text" style="text-align:left">Home Page Before</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="Home2.png" style="width:100%">
+  <div class="text" style="text-align:left">Home Page After</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="About.png" style="width:100%">
+  <div class="text" style="text-align:left">About Page Before</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="About2.png" style="width:100%">
+  <div class="text" style="text-align:left">About Page After</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="Outage.png" style="width:100%">
+  <div class="text" style="text-align:left">Outage Page Before</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="Outage2.png" style="width:100%">
+  <div class="text" style="text-align:left">Outage Page After</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="Faq.png" style="width:100%">
+  <div class="text" style="text-align:left">Faq Page Before</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="Faq2.png" style="width:100%">
+  <div class="text" style="text-align:left">Faq Page After</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="Contact.png" style="width:100%">
+  <div class="text" style="text-align:left">The Contact Page We Added</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+ </div>
+   <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+  </body>
+</html>
